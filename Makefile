@@ -6,11 +6,9 @@ publish: release
 
 test:
 	@echo "Running Tests"
-	@nodeunit test/*
+	@nodeunit test/simple/*
 
 test-all: test
-	@echo "Running All Tests"
-	@nodeunit test/*
 
 benchmark: 
 	@echo "Running Benchmarks"
@@ -19,9 +17,7 @@ benchmark:
 doc:
 	node tools/doctool/doctool.js
 
-GJSLINT = gjslint --unix_mode --strict --nojsdoc
-
 lint:
-	@$(GJSLINT) -r lib/ -r test/
+	@gjslint --unix_mode --strict --nojsdoc -r lib/ -r test/
 
 .PHONY: release publish test test-all benchmark doc lint
