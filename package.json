@@ -1,0 +1,18 @@
+{
+  "author": "Micheil Smith <micheil@brandedcode.com> (http://brandedcode.com)",
+  "name": "websocket-protocol",
+  "description": "A general websocket-protocol implementation for both Clients and Servers.",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/miksago/node-websocket-protocol.git"
+  },
+  "dependencies": {
+    "ctype": "~0.0.3"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "main": "index.js"
+}
